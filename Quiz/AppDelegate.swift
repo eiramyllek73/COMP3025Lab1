@@ -2,9 +2,10 @@
 //  AppDelegate.swift
 //  Quiz
 //
-//  Created by student on 2016-01-15.
+//  Version 1 created by Kelly McAlpine on 2016-01-15.
 //  Copyright © 2016 studentGeorgian. All rights reserved.
 //
+//  Version 1.1 2016-01-21
 
 import UIKit
 
