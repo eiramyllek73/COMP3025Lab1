@@ -30,12 +30,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znp-Cc-e6u">
-                                <rect key="frame" x="252" y="57" width="98" height="30"/>
+                                <rect key="frame" x="251" y="57" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnA-es-hlA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ux-rQ-uJ1">
                                 <rect key="frame" x="254" y="325" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHx-mB-Bje"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,6 +56,10 @@
                             <constraint firstItem="Znp-Cc-e6u" firstAttribute="top" secondItem="gRt-Z1-nL6" secondAttribute="bottom" constant="8" id="ysd-GJ-3dF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="45R-cq-xhw" id="IPX-05-lxZ"/>
+                        <outlet property="questionLabel" destination="gRt-Z1-nL6" id="BD3-iH-tn1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
